@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+
+# If you are using SQLite:
+db.sqlite3
+
+# Ignore virtual environments:
+venv/
+env/
+ENV/
+venv.bak/
+.vscode/
+
+# Ignore IDE-specific files:
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Static files and media (optional):
+staticfiles/
+media/
+
+# Ignore node_modules if using Node.js:
+node_modules/
+
+# Ignore migrations files:
+**/migrations/
+
+# Ignore secret settings:
+.env
+
+# Ignore coverage reports:
+htmlcov/
+.coverage
+.tox/

@@ -1,0 +1,26 @@
+<h1>{{ player.name }}</h1>
+<p>Position: {{ player.position }}</p>
+<p>Current Year: {{ player.current_year }}</p>
+<p>Current Rating: {{ player.current_rating }}</p>
+<p>Career Result: {{ player.career_result }}</p>
+
+<h2>Yearly Stats</h2>
+<ul>
+    {% for stats in player.yearly_stats.all %}
+        <li>{{ stats.year }} - Rating: {{ stats.rating }}, Games Played: {{ stats.games_played }}, Snaps: {{ stats.snaps_played }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Position Changes</h2>
+<ul>
+    {% for change in player.position_changes.all %}
+        <li>{{ change.year_of_change }} - From {{ change.old_position }} to {{ change.new_position }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Awards</h2>
+<ul>
+    {% for award in player.awards.all %}
+        <li>{{ award.name }} - {{ award.year_won }}</li>
+    {% endfor %}
+</ul>
